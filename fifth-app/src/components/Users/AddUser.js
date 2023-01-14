@@ -16,7 +16,7 @@ export default class AddUser extends Component {
     }
     saveUserInfo(event) {
         event.preventDefault();
-        if(this.state.username.trim().length === 0 || this.state.age.trim().length === 0){
+        if (this.state.username.trim().length === 0 || this.state.age.trim().length === 0){
             this.setState({
                 isErrorOccured: true,
                 title: 'Invalid username',
@@ -24,7 +24,7 @@ export default class AddUser extends Component {
             });
             return;
         }
-        if(+this.state.age < 0){
+        if (+this.state.age < 0){
             this.setState({
                 isErrorOccured: true,
                 title: 'Invalid age',

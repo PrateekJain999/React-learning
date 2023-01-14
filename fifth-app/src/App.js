@@ -6,7 +6,6 @@ function App() {
 	let [initialUserList, updatedUserList] = useState([]);
 
 	let saveUserInfo = (userData) => {
-		console.log(userData)
 		initialUserList = [...initialUserList, userData];
 		updatedUserList(initialUserList);
 	}
